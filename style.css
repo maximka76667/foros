@@ -1,0 +1,27 @@
+.heading {
+  text-align: center;
+}
+
+.form {
+  width: 70%;
+  margin: 0 auto;
+}
+
+.form__label_oblg::before {
+  content: '* ';
+  color: red;
+}
+
+.negrita {
+  font-weight: bold;
+}
+
+.form__submit-button {
+  display: block;
+  margin: 0 auto;
+}
+
+.form__info {
+  text-align: center;
+  color: red;
+}

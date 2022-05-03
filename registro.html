@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Registro</title>
+</head>
+
+<body>
+  <h1 class="heading">Registro Usuario</h1>
+  <form action="ins_usuario.php" method="POST" class="form">
+    <table>
+      <!-- Nick -->
+      <tr class="table__tr">
+        <td class="table__td">
+          <label for="nick" class="form__label form__label_oblg">Nick</label>
+        </td>
+        <td class="table__td">
+          <input type="text" id="nick" name="nick" maxlength="20" class="form__input">
+        </td>
+      </tr>
+      <!-- Clave -->
+      <tr class="table__tr">
+        <td class="table__td">
+          <label for="clave" class="form__label form__label_oblg">Clave</label>
+        </td>
+        <td class="table__td">
+          <input type="password" id="clave" name="clave" maxlength="20" class="form__input">
+        </td>
+      </tr>
+      <!-- Repetir Clave -->
+      <tr class="table__tr">
+        <td class="table__td">
+          <label for="clave_repe" class="form__label form__label_oblg">Repetir Clave</label>
+        </td>
+        <td class="table__td">
+          <input type="password" id="clave_repe" name="clave_repe" maxlength="20" class="form__input">
+        </td>
+      </tr>
+      <!-- Correo -->
+      <tr class="table__tr">
+        <td class="table__td">
+          <label for="correo" class="form__label form__label_oblg">Correo</label>
+        </td>
+        <td class="table__td">
+          <input type="email" id="correo" name="correo" maxlength="320" class="form__input">
+        </td>
+      </tr>
+      <tr class="table__tr">
+        <td class="table__td"></td>
+        <td class="table__td"><span class="negrita">Escribe tu dirección de email verdadera,</span> será necesaria si
+          quieres recuperar tu contraseña
+        </td>
+      </tr>
+      <!-- Numero Foros -->
+      <tr class="table__tr">
+        <td class="table__td">
+          <label for="nforos" class="form__label form__label_oblg">Nº de foros que conozco</label>
+        </td>
+        <td class="table__td">
+          <input type="text" id="nforos" name="nforos" size="2" maxlength="3" class="form__input">
+        </td>
+      </tr>
+    </table>
+    <button class="form__submit-button" type="submit">Aceptar</button>
+    <p class="form__info">* Datos obligatorios</p>
+  </form>
+</body>
+
+</html>
