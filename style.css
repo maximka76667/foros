@@ -1,7 +1,23 @@
+/* Header */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+  margin: 0 auto;
+  padding: 20px 0;
+  border-bottom: 1px solid #000;
+}
+
 .heading {
   text-align: center;
 }
 
+.negrita {
+  font-weight: bold;
+}
+
+/* Register form */
 .form {
   width: 70%;
   margin: 0 auto;
@@ -12,10 +28,6 @@
   color: red;
 }
 
-.negrita {
-  font-weight: bold;
-}
-
 .form__submit-button {
   display: block;
   margin: 0 auto;
@@ -24,4 +36,38 @@
 .form__info {
   text-align: center;
   color: red;
+}
+
+/* Login form */
+.login__input {
+  height: 24px;
+  font-size: 18px;
+  padding: 3px 5px;
+}
+
+.login__submit-button {
+  width: 100px;
+  padding: 5px;
+}
+
+.login__register-link {
+  transition: all 0.2s;
+}
+
+.login__register-link:hover {
+  color: #ff5555;
+}
+
+/* Foros */
+.foros {
+  width: 80%;
+  margin: 30px auto;
+  background: #f7f7f7;
+  border-radius: 10px;
+  padding: 10px 20px;
+  font-size: 20px;
+}
+
+.foros__th {
+  text-align: left;
 }

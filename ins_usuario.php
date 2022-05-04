@@ -1,6 +1,6 @@
 <?php
 
-session_start();
+  session_start();
   extract($_POST);
   $isError = false;
 
@@ -26,19 +26,20 @@ session_start();
     die("Clave inválido");
   }
 
-  if($clave !== $repe_clave) {
+  if($clave !== $clave_repe) {
     $isError = true;
     die("Clave y repetir clave deben ser iguales");
   }
 
-  if(!is_integer($nforos)) {
+  if(!is_integer(intval($nforos))) {
     $isError = true;
     die("NForos deben ser solo digitos");
   }
 
   if(!$isError) {
-    $connection = mysqli_connect("localhost", "root", "root", "session2") or die("Connection error: " . mysqli_connect_error());
-    $query = "INSERT INTO `usuarios` VALUES('$nick', sha1('$clave'), '$correo', $nforos";
+    $connection = mysqli_connect("localhost", "root", "root", "sesiones2") or die("Connection error: " . mysqli_connect_error());
+    $nforos = intval($nforos);
+    $query = "INSERT INTO `usuarios` VALUES('$nick', sha1('$clave'), '$correo', $nforos)";
     $result = mysqli_query($connection, $query) or die("Query error: " . mysqli_error($connection));;
     $_SESSION['email'] = $correo;
     $_SESSION['nick'] = $nick;
