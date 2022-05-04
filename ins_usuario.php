@@ -41,7 +41,7 @@
     $nforos = intval($nforos);
     $query = "INSERT INTO `usuarios` VALUES('$nick', sha1('$clave'), '$correo', $nforos)";
     $result = mysqli_query($connection, $query) or die("Query error: " . mysqli_error($connection));;
-    $_SESSION['email'] = $correo;
+    $_SESSION['correo'] = $correo;
     $_SESSION['nick'] = $nick;
     header("location:index.php");
   }
