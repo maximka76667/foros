@@ -23,7 +23,7 @@
           <table>
             <tr>
               <td>
-                <input class='login__input' name='nick' maxlength='20' placeholder='Nickname' />
+                <input class='login__input' type='text' name='nick' maxlength='20' placeholder='Nickname' />
               </td>
               <td rowspan='2'>
                 <button class='login__submit-button' type='submit'>Entrar</button>
@@ -31,7 +31,7 @@
             </tr>
             <tr>
               <td>
-                <input class='login__input' name='clave' maxlength='20' placeholder='Password' />
+                <input class='login__input' type='password' name='clave' maxlength='20' placeholder='Password' />
               </td>
             </tr>
             <tr>
@@ -52,11 +52,6 @@
         <th class="foros__th">Nombre del Foro</th>
         <th class="foros__th">Mensajes</th>
         <th class="foros__th">Último mensaje</th>
-      </tr>
-      <tr class="foros__tr">
-        <td class="foros__td">Nombre</td>
-        <td class="foros__td">Mensajes</td>
-        <td class="foros__td">Ultimo</td>
       </tr>
     </table>
   </main>
